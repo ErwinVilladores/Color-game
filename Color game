@@ -1,0 +1,148 @@
+print("COLOR GAME")
+score = 0
+print("Instruction: Achieve the right mixture of colors to get the provided color that are given in each number and choose only from the selection.  ")
+print("\nColor #1) GREEN")
+print("Select your 1st color")
+print("1 - RED")
+print("2 - BLUE")
+print("3 - YELLOW")
+color11 = int(input("Enter your 1st color: "))
+if color11 <= 3:
+    if color11 == 1:
+        print("You chose RED")
+    elif color11 == 2:
+        print("You chose BLUE")
+    else:
+        print("You chose YELLOW")
+else:
+    print("=== Select only from the selection thank you ===")
+    exit()
+color12 = int(input("\nEnter your 2nd color: "))
+if color12 <= 3:
+    if color12 != color11:
+        if color12 == 1:
+            print("You chose RED\n")
+        elif color12 == 2:
+            print("You chose BLUE\n")
+        else:
+            print("You chose YELLOW\n")
+    else:
+        print("Please don't select same color Thank you")
+        exit()
+else:
+    print("=== Select only from the selection thank you ===")
+    exit()
+mix1 = color11 + color12
+print("RESULT")
+if mix1 == 5:
+    print("The result is GREEN")
+    print("Correct mixture of colors")
+    print("="*59)
+    score = score + 1
+elif mix1 == 3:
+    print("The result is VIOLET")
+    print("Wrong mixture of colors")
+    print("="*59)
+elif mix1 == 4:
+    print ("The result is ORANGE")
+    print("Wrong mixture of colors")
+    print("="*59)
+else:
+    pass
+print("\nColor #2) ORANGE")
+print("Select your 1st color")
+print("1 - RED")
+print("2 - BLUE")
+print("3 - YELLOW")
+color21 = int(input("Enter your 1st color: "))
+if color21 <= 3:
+    if color21 == 1:
+        print("You chose RED")
+    elif color21 == 2:
+        print("You chose BLUE")
+    else:
+        print("You chose YELLOW")
+else:
+    print("=== Select only from the selection thank you ===")
+    exit()
+color22 = int(input("\nEnter your 2nd color: "))
+if color22 <= 3:
+    if color22 != color21:
+        if color22 == 1:
+            print("You chose RED\n")
+        elif color22 == 2:
+            print("You chose BLUE\n")
+        else:
+            print("You chose YELLOW\n")
+    else:
+        print("Please don't select same color Thank you")
+        exit()
+else:
+    print("=== Select only from the selection thank you ===")
+    exit()
+mix1 = color21 + color22
+print("RESULT")
+if mix1 == 5:
+    print("The result is GREEN")
+    print("Wrong mixture of colors")
+    print("="*59)
+elif mix1 == 3:
+    print("The result is VIOLET")
+    print("Wrong mixture of colors")
+    print("="*59)
+elif mix1 == 4:
+    print ("The result is ORANGE")
+    print("Correct mixture of colors")
+    score = score + 1
+    print("="*59)
+else:
+    pass
+print("\nColor #3) GRAY")
+print("Select your 1st color")
+print("1 - BLACK")
+print("2 - PINK")
+print("3 - WHITE")
+color31 = int(input("Enter your 1st color: "))
+if color31 <= 3:
+    if color31 == 1:
+        print("You chose BLACK")
+    elif color31 == 2:
+        print("You chose PINK")
+    else:
+        print("You chose WHITE")
+else:
+    print("=== Select only from the selection thank you ===")
+    exit()
+color32 = int(input("\nEnter your 2nd color: "))
+if color32 <= 3:
+    if color32 != color31:
+        if color32 == 1:
+            print("You chose BLACK\n")
+        elif color32 == 2:
+            print("You chose PINK\n")
+        else:
+            print("You chose WHITE\n")
+    else:
+        print("Please don't select same color Thank you")
+        exit()
+else:
+    print("=== Select only from the selection thank you ===")
+    exit()
+mix3 = color31 + color32
+print("RESULT")
+if mix3 == 5:
+    print("The result is LIGHT PINK ")
+    print("Wrong mixture of colors")
+    print("="*59)
+elif mix3 == 3:
+    print("The result is DARK PURPLE")
+    print("Wrong mixture of colors")
+    print("="*59)
+elif mix3 == 4:
+    print ("The result is GRAY")
+    print("Correct mixture of colors")
+    score = score + 1
+    print("="*59)
+else:
+    pass
+print("Your total score is:", score)
